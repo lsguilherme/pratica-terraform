@@ -7,7 +7,7 @@ variable "aws_region" {
 variable "aws_profile" {
   description = "Perfil da AWS a ser utilizado do aws configure."
   type        = string
-  default     = "seu profile"
+  default     = "lacerdagui42@gmail.com"
 }
 
 variable "vpc_id" {

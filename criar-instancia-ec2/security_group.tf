@@ -2,7 +2,7 @@
 resource "aws_security_group" "sg_ec2" {
   name        = var.sg_name
   description = "Permite qualquer acesso HTTP e SSH."
-  vpc_id      = var.vpc_id
+  vpc_id      = aws_vpc.main.id
 
   ingress {
     from_port   = 22
